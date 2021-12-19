@@ -22,13 +22,13 @@ public class ExpensesManager {
 
     }
 
-    void printAllExpenses(double[] expenses) {
+    void printAllExpenses() {
         for (int i = 0; i < this.expenses.length; i++) {
             System.out.println("День " + (i + 1) + ". Потрачено " + this.expenses[i] + " рублей");
         }
     }
 
-    double findMaxExpense(double[] expenses) {
+    double findMaxExpense() {
         double maxExpense = 0;
         for (int i = 0; i < this.expenses.length; i++) {
             if (this.expenses[i] > maxExpense) {
